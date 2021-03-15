@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+
+      function Student(name,age,roll,cgpa,lang){
+            this.name = name;
+            this.age = age;
+            this.roll = roll;
+            this.cgpa = cgpa;
+            this.lang = lang;
+
+
+            this.display = function(){
+                console.log(this.name);
+                console.log(this.age);
+                console.log(this.roll);
+                console.log(this.cgpa);
+                console.log(this.lang);
+
+            }
+        }
+
+        var student1 = new Student("Md. Rasel",32,1001,3.50,["Bangla","English"]);
+        var student2 = new Student("Md. Rasedul",30,1002,4.50,["Bangla","Urdo","English"]);
+        var student3 = new Student("Md. Emad",22,1003,2.50,["Bangla","English", "Arabic"]);
+
+
+        student1.display();
+        student2.display();
+        student3.display();
+
+//Math object;
+var num1 = parseInt(prompt("Enter first number : "));
+var num2 = parseInt(prompt("Enter second number : "));
+
+var maximum = Math.max(num1, num2);
+console.log(maximum);
+
+
+
+
+
+    </script>
+</body>
+</html>
